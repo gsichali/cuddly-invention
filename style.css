@@ -338,6 +338,11 @@ section{
     width:50%;
 }
 
+/*contact section styling*/
+.contact .title::after{
+    content:"get in touch";
+}
+
 
 /*responsive media query*/
 @media (max-width:1300px){
