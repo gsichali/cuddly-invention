@@ -147,7 +147,8 @@ section{
     font-family: 'montserrat', sans-serif ;
 }
 
-.about .about-content{
+.about .about-content,
+.services .services-content{
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -199,6 +200,32 @@ section{
 }
 
 /*services section styling*/
+.services{
+    color:#fff;
+    background: #111;
+}
+.services .title::before{
+    background: #fff;
+
+}
+.services .title::after{
+    background: #111;
+    content:"what I provide";
+}
+.services .services-content .card{
+    width: calc(33% - 20px); 
+    text-align:center;
+    background: #222;
+    padding: 20px 25px;
+    border-radius:6px;
+    cursor:pointer;
+}
+
+.services .services-content .card i{
+    font-size:50px;
+    color:#abc5ae;
+
+}
 
 
 /*responsive media query*/
