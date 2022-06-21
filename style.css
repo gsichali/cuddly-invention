@@ -463,6 +463,13 @@ section .title::after{
     background: none;
 }
 
+/*php contact form*/
+
+.user-cannot-see {
+    display:none
+}
+
+
 
 /*footer section styling*/
 footer{
