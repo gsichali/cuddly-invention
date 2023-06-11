@@ -25,13 +25,13 @@ $(document).ready(function(){
     })
     //typing menu/navbar script
     var typed = new Typed(".typing", {
-        strings: ["Developer","Designer","Freelancer"],
+        strings: ["Developer","Designer","Data Analyst"],
         typeSpeed:100,
         backSpeed:60,
         loop:true
     });
     var typed = new Typed(".typing-2" , {
-        strings: ["Developer","Designer","Freelancer"],
+        strings: ["Developer","Designer","Data Analyst"],
         typeSpeed:100,
         backSpeed:60,
         loop:true
