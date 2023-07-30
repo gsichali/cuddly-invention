@@ -4,6 +4,7 @@
     padding: 0;
     box-sizing: border-box;
     text-decoration: none;
+    list-style:none ;
 }
 html{
     scroll-behavior: smooth;
@@ -142,7 +143,7 @@ html{
 section{
     padding:100px 0;
 }
-.about, .services, .skills, .contact, footer{
+.about, .services, .skills, .contact, .resume, .footer{
     font-family: 'montserrat', sans-serif ;
 }
 section .title{
@@ -175,15 +176,103 @@ section .title::after{
     transform: translateX(-50%);
 }
 .about .about-content,
-.services .services-content, .skills .skills-content, .contact .contact-content{
+.services .services-content, .skills .skills-content, .contact .contact-content, .resume .resume-content{
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
 
 }
-/*about section styling*/
+/*resume section styling*/
+.resume-content{
+    width: 80%;
+    min-height:100vh;
+    margin: 2rem auto;
+    display: grid;
+    background-color: red;
+    grid-template-columns: repeat(7,1fr);
+}
+.resume-content .right{
+    grid-column: span 5;
+    background-color:white;
+    height: 100%;         
+}
+.resume-content .left{
+    grid-column: span 2;
+    background-color:#ebece4;
+    height: 100%;  
+    
+}
+.left-content{
+    padding:1rem 3rem;
+}
+.profile{
+    width:100%;
+    border-bottom: 2px solid #abc5ae;
+}
+.profile img{
+    width:100%;
+    border-radius: 50%;
+    border: 8px solid #ebece4;
+}
+.name{
+    font-size: 1.5rem;
+    color:rgb(45, 44, 44);
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding: 1.2rem 0;
+}
+.main-title{
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #abc5ae;
+    padding-top: 2rem ;
+}
 
+.contact-info ul{
+    padding-top: 2rem;
+}
+
+.contact-info ul li{
+    padding: .4rem 0;
+    display: flex;
+    align-items: center;
+    font-size:.9rem;
+}
+.contact-info ul li i{
+    padding-right: 1rem;
+    color: #abc5ae;
+    font-size:1rem;
+}
+/*
+.resume .resume-content .right .text{
+    font-size:15px;
+    font-weight:600;   
+}
+.resume .resume-content .left .text{
+    font-size:15px;
+    font-weight:500;
+}
+
+.resume .resume-content .right p{
+    text-align: justify;
+}
+.resume .resume-content .right .text p{
+    color:#abc5ae;
+}
+.resume .resume-content .left .text{    
+    width:400px;
+}
+.resume .resume-content .left img{
+    width:180px;
+    height: 210px;
+    margin:auto;
+    display: block;
+}
+
+/*about section styling*/
 
 .about .about-content .right{
     width:55%;
@@ -469,8 +558,6 @@ section .title::after{
     display:none
 }
 
-
-
 /*footer section styling*/
 footer{
     background: #111;
@@ -492,6 +579,12 @@ footer{
         height:550px;
         width:350px;
     }
+}
+@media (max-width:1104px){
+        .resume .resume-content .left{
+            height:550px;
+            width:350px;
+        }
    
 }
 @media (max-width:991px){
@@ -570,6 +663,21 @@ footer{
 
     }  
     
+    .resume .resume-content .column{
+        width: 100%;
+        color: blue;
+    }
+    .resume .resume-content .left{
+        
+        flex:100%;
+    
+        margin:0 auto 60px;
+        color: red;
+    }
+    .resume .resume-content .right{
+        flex:100%;
+        
+    }
 
 }
 @media (max-width:690px){
