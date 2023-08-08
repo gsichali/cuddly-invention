@@ -194,7 +194,8 @@ section .title::after{
 .resume-content .right-section{
     grid-column: span 5;
     background-color:white;
-    height: 100%;         
+    height: 100%; 
+    padding-top:1rem ;        
 }
 .resume-content .left-section{
     grid-column: span 2;
@@ -329,14 +330,13 @@ section .title::after{
     letter-spacing: 1px;
     color: #588157;
     position: relative;
-    font-size: 1.5rem;
 }
 .right-title::after{
     content:"";
-    width: 60%;
+    width: 65%;
     height: .2rem;
-    border-radius: 8px;
-    background-color: #588157;
+    border-radius: 12px;
+    background-color: #ccc;
     position: absolute;
     right: 0;
     top: 50%;
@@ -346,6 +346,41 @@ section .title::after{
     line-height: 1.5rem;
     font-size: 1rem;
     color: #344e41;
+}
+.sect{
+    padding-bottom: 1px;
+}
+.timeline{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+.tl-title{
+    letter-spacing: 1px;
+    font-size: 1rem;
+    text-transform: uppercase;
+    color: #344e41;
+}
+.tl-title-2{
+    letter-spacing: 1px;
+    font-size: 1rem;
+    text-transform: uppercase;
+    color: #588157;
+    
+}
+.tl-content{
+    border-left: 1px solid #a3b18a;
+    padding-left: 1rem;
+    position:relative;
+    padding-bottom: 2rem;
+}
+.tl-title-2::before{
+    content:"";
+    width: 13px;
+    height: 13px;
+    border-radius: 50%;
+    background-color: #588157;
+    position: absolute;
+    left: -7px;
 
 }
 
@@ -582,7 +617,7 @@ section .title::after{
     height: 45px;
     margin-bottom:15px;
 }
-.contact .right form .name{
+.contact .right form .fullname{
     margin-right:10px;
 
 }
