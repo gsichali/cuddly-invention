@@ -834,12 +834,20 @@ footer{
 }
 @media (max-width:823px){
     .right-title::after{
-        width:40%;
+        width:30%;
     }
 }
 @media screen and (max-width:681px){
     .right-title::after{
         width:30%;
+    }
+}
+@media screen and (max-width:390px){
+    .right-title::after{
+        width:30%;
+    }
+    .right-title{
+        font-size:0.9rem;
     }
 }
 @media screen and (max-width:780px){
@@ -857,7 +865,10 @@ footer{
 }
 @media screen and (max-width:823px){
     .right-title::after{
-        width:40%;
+        width:30%;
+    }
+    .right-title{
+        font-size:1.4rem;
     }
 }
 @media screen and (max-width:700px){
