@@ -204,19 +204,22 @@ section .title::after{
     padding-top: 1rem; 
     
 }
-.left-content{
+.left-main-content{
     padding: 2rem 3rem;
 }
 .profile{
     width:100%;
     border-bottom: 2px solid #abc5ae;
-    padding-top: 0;
+}
+
+.image{
+    width: 100%;
+    text-align: center;
 }
 .profile img{
     width:100%;
     border-radius: 50%;
-    border: 8px solid #ebece4;
-    padding-top: 0;
+    border: 8px solid #abc5ae ;
 }
 .name{
     font-size: 1.5rem;
@@ -775,7 +778,10 @@ footer{
         width: 100%;
         margin-bottom: 35px;
 
-    }  
+    } 
+    .right-title::after{
+        width:40%;
+    } 
     
     .resume .resume-content .column{
         width: 100%;
@@ -813,9 +819,10 @@ footer{
     }
     footer{
         font-size: 15px;
-    }
+    } 
     
 }
+
 @media (max-width:500px){
      .home .home-content .text-2{
         font-size: 50px;
@@ -824,4 +831,51 @@ footer{
         font-size: 27px;
     }
     
+}
+@media (max-width:823px){
+    .right-title::after{
+        width:40%;
+    }
+}
+@media screen and (max-width:681px){
+    .right-title::after{
+        width:30%;
+    }
+}
+@media screen and (max-width:780px){
+    .timeline{
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+@media screen and (max-width:780px){
+    .left-section{
+        grid-column: span 3;
+    }
+    .right-section{
+        grid-column: span 4;
+    }
+}
+@media screen and (max-width:823px){
+    .right-title::after{
+        width:40%;
+    }
+}
+@media screen and (max-width:700px){
+    .profile img{
+        width: 60%;
+    } 
+
+}
+@media screen and (max-width:1200px){
+    .profile img{
+        width:40%;
+    }
+    .resume-content{
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+@media screen and (max-width:30px){
+    .name{
+        font-size: 1.5rem;
+    }
 }
