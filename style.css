@@ -205,7 +205,7 @@ section .title::after{
     
 }
 .left-main-content{
-    padding: 2rem 3rem;
+    padding: 2rem 2rem;
 }
 .profile{
     width:100%;
@@ -245,13 +245,23 @@ section .title::after{
     padding: .4rem 0;
     display: flex;
     align-items: center;
-    font-size:.9rem;
+    font-size:.8rem;   
+
 }
 .contact-info ul li i{
     padding-right: 1rem;
     color: #abc5ae;
-    font-size:1rem;
+    font-size:.8rem;
 }
+.contact-info ul li a{
+    color: black;
+    list-style: none;
+    
+}
+.contact-info a:hover{
+    color: #abc5ae;    
+}
+
 .skills-section ul li{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
